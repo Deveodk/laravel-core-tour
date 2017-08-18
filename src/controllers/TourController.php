@@ -30,6 +30,7 @@ class TourController extends BaseController
 
     /**
      * @param $slug
+     * @return \Illuminate\Http\JsonResponse
      */
     public function getCoreTours($slug)
     {

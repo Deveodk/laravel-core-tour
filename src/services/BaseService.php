@@ -8,7 +8,7 @@ use Illuminate\Database\DatabaseManager;
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use League\Fractal\TransformerAbstract;
 
-abstract class BaseService
+class BaseService
 {
     /** @var DatabaseManager */
     protected $database;
