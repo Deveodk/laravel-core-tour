@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "DeveoDK\\DistributedGenerators\\": "src"
+      "DeveoDK\\LaravelCoreTour\\": "src"
     }
   },
   "autoload-dev": {
