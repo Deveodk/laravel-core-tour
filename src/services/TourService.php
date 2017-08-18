@@ -31,7 +31,9 @@ class TourService extends BaseService
         $user = user();
         $userClass = get_class($user);
 
-        return CoreTour::where('authenticable_type', '=', $userClass)->where('slug', '=', $slug)->first();
+        return CoreTour::where('authenticable_type', '=', $userClass)
+            ->where('authenticable_id', '=', $user->id)
+            ->where('slug', '=', $slug)->first();
     }
 
     /**
